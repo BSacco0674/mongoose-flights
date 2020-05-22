@@ -1,0 +1,43 @@
+<%- include('../partials/base') %>
+
+
+  <h2>Come fly with me lets fly</h2>
+  <form action="/flights" method="POST">
+
+    <label>Airline
+      <select name="airline">
+        <option value="American">American</option>
+        <option value="Southwest">Southwest</option>
+        <option value="United">United</option>
+      </select>
+    </label><br>
+    <label>Airports
+        <select name="airport">
+          <option value="AUS">AUS</option>
+          <option value="DFW">DFW</option>
+          <option value="DEN">DEN</option>
+          <option value="LAX">LAX</option>
+          <option value="SAN">SAN</option>
+        </select>
+      </label><br>
+
+
+    <label>Flight Number
+      <input type="number" min="10" max="9999" name="flightNo">
+    </label><br>
+    <label>Depart Date
+        <input type='datetime-local' name='departs' value='2021-05-22T06:00'>
+    </label><br>
+    <input type="submit" value="Add Flight">
+  </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<%- include('../partials/footer') %>
